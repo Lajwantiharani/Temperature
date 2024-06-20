@@ -4,61 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
-
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.x/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center min-vh-100">
-        <div class="col-md-6 col-lg-4 converter">
-          <h2 class="text-center mb-4">Temperature Converter</h2>
-          <form>
-            <div class="mb-5">
-              <label for="fromUnit" class="form-label">From:</label>
-              <select class="form-select" id="fromUnit">
-                <option value="C">Celsius</option>
-                <option value="F">Fahrenheit</option>
-                <option value="K">Kelvin</option>
-              </select>
-            </div>
-            <div class="mb-4">
-              <label for="toUnit" class="form-label">To:</label>
-              <select class="form-select" id="toUnit">
-                <option value="C">Celsius</option>
-                <option value="F">Fahrenheit</option>
-                <option value="K">Kelvin</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="temperature" class="form-label">Temperature:</label>
-              <input
-                type="number"
-                class="form-control"
-                id="temperature"
-                placeholder="Enter Temperature"
-              />
-            </div>
-            <button
-              type="button"
-              class="btn btn-primary btn-block"
-              onclick="convert()"
-            >
-              Convert
-            </button>
-            <div class="mb-3">
-              <label for="result" class="form-label">Result:</label>
-              <input type="text" class="form-control" id="result" readonly />
-            </div>
-          </form>
-        </div>
+  <body class="bg-gradient d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="converter-container align-items-center ">
+        <h2 class="text-center mb-4">Temperature Converter</h2>
+        <form class="w-100">
+          <div class="form-group">
+            <label for="fromUnit" class="form-label">From:</label>
+            <select class="form-select" id="fromUnit">
+              <option value="C">Celsius</option>
+              <option value="F">Fahrenheit</option>
+              <option value="K">Kelvin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="toUnit" class="form-label">To:</label>
+            <select class="form-select" id="toUnit">
+              <option value="C">Celsius</option>
+              <option value="F">Fahrenheit</option>
+              <option value="K">Kelvin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="temperature" class="form-label">Temperature:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="temperature"
+              placeholder="Enter Temperature"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn-block custom-button mb-3"
+            onclick="convert()"
+          >
+            Convert
+          </button>
+          <div class="form-group">
+            <label for="result" class="form-label">Result:</label>
+            <input type="text" class="form-control" id="result" readonly />
+          </div>
+        </form>
       </div>
     </div>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.x/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
