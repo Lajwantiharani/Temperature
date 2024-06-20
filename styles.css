@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #8e2de2, #fc0069);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+.converter {
+    background: rgb(250, 126, 250);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(105, 31, 62);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.result {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: rgb(199, 94, 152);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    color: rgb(255, 0, 106);
+    font-size: 1.2em;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 95%;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 167, 228);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+#result {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media screen and (max-width: 500px) {
+    .converter {
+        width: 90%;
+    }
+}
